@@ -1,0 +1,10 @@
+from: technologyadvice/node-build:6
+services:
+  - nshou/elasticsearch-kibana:
+      name: es-kibana
+      persist: false
+expose:
+  - 9200:9200
+  - 5601:5601
+tasks:
+  start: /bin/bash
