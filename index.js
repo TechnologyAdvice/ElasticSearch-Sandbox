@@ -3,7 +3,7 @@ const rp = require('request-promise')
 
 const index = 'test'
 const type = 'log'
-const endpoint = `http://${process.env.ES_KIBANA_PORT_9200_TCP_ADDR}:9200/${index}/${type}/`
+const endpoint = `http://${process.env.ELASTICSEARCH_PORT_9200_TCP_ADDR}:9200/${index}/${type}/`
 const mock = {
   statuses: [ 'info', 'warn', 'error' ],
   systems: [ 'red', 'green', 'blue' ],
